@@ -42,7 +42,7 @@ async function desactivarCurso(id){
     return curso;
 }
 
-// Endpoint de tipo DELETE para el recurso CURSOS
+// Endpoint de tipo DELETE para ell recurso CURSOS
 ruta.delete('/:id', (req, res) => {
     let resultado = desactivarCurso(req.params.id);
     resultado.then(curso => {
