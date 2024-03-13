@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}));
 app.use('/api/usuarios', usuarios);
 app.use('/api/cursos', cursos);
 
-const port = process.env.PORT || 3004;
+const port = process.env.PORT || 3080;
 app.listen(port, () => {
     console.log('API REST Ok, y ejecutándose...');
 });
