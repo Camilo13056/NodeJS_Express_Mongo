@@ -32,7 +32,7 @@ ruta.post('/', (req, res) => {
     })
 });
 
-// Función asíncrona para inactivar cursos
+// Función asíncrona paraa inactivar cursos
 async function desactivarCurso(id){
     let curso = await Curso.findByIdAndUpdate(id, {
         $set: {
