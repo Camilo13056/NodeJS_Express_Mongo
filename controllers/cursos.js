@@ -6,7 +6,7 @@ const ruta = express.Router();
 //    res.json('Respuesta a peticion GET de CURSOS funcionando correctamente...')
 //});
 
-// Función asíncrona para crear cursos
+// Función asíncrona para crear Cursos
 async function crearCurso(body){
     let curso = new Curso({
         titulo       : body.titulo,
@@ -17,7 +17,7 @@ async function crearCurso(body){
     return await curso.save();
 }
 
-// Endpoint de tipo POST para el recurso CURSOS
+// Endpoint de tipo POST para el recurso CURSOOS
 ruta.post('/', (req, res) => {
     let resultado = crearCurso(req.body);
 
